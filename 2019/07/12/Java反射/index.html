@@ -109,12 +109,12 @@
 <meta property="og:site_name" content="Mikasa·AckermanBlog">
 <meta property="og:description" content="Java 反射机制概述：​            Java反射机制指的是在Java程序运行状态中，对于任何一个类，都可以获得这个类的所有属性和方法；对于给定的一个对象，都能够调用它的任意一个属性和方法。这种动态获取类的内容以及动态调用对象的方法称为反射机制。 意义：​          首先，反射机制极大的提高了程序的灵活性和扩展性，降低模块的耦合性，提高自身的适应能力。 ​          其">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/.com//F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJava%E5%8F%8D%E5%B0%84%5C%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/12/Java反射/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJava%E5%8F%8D%E5%B0%84%5C%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95.png">
 <meta property="og:updated_time" content="2019-07-12T12:52:17.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java反射">
 <meta name="twitter:description" content="Java 反射机制概述：​            Java反射机制指的是在Java程序运行状态中，对于任何一个类，都可以获得这个类的所有属性和方法；对于给定的一个对象，都能够调用它的任意一个属性和方法。这种动态获取类的内容以及动态调用对象的方法称为反射机制。 意义：​          首先，反射机制极大的提高了程序的灵活性和扩展性，降低模块的耦合性，提高自身的适应能力。 ​          其">
-<meta name="twitter:image" content="http://yoursite.com/.com//F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJava%E5%8F%8D%E5%B0%84%5C%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/12/Java反射/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJava%E5%8F%8D%E5%B0%84%5C%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95.png">
 
 
 
@@ -447,7 +447,7 @@
 <p>​          其次，通过反射机制可以让程序创建和控制任何类的对象，无需提前硬编码目标类。</p>
 <p>​          再次，使用反射机制能够在运行时构造一个类的对象，判断一个类所具有的成员变量和方法，调用一个对象的方法并生成动态代理。</p>
 <p>​          最后，反射机制是构建框架技术的基础所在，使用反射可以避免将代码写死在框架中。</p>
-<h2 id="反射的三种方式："><a href="#反射的三种方式：" class="headerlink" title="反射的三种方式："></a>反射的三种方式：</h2><p>​                  1.Class.forName(“全类名”)：将字节码文件加载进内存，放回Class对象<br>​                  2.类名.class：通过类名的属性class获取<br>​                  3.对象.getClass()：getClass()方法在object类中定义着。<br><img src="/.com//F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJava%E5%8F%8D%E5%B0%84%5C%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95.png" alt="反射的三种方法"></p>
+<h2 id="反射的三种方式："><a href="#反射的三种方式：" class="headerlink" title="反射的三种方式："></a>反射的三种方式：</h2><p>​                  1.Class.forName(“全类名”)：将字节码文件加载进内存，放回Class对象<br>​                  2.类名.class：通过类名的属性class获取<br>​                  3.对象.getClass()：getClass()方法在object类中定义着。<br><img src="//yoursite.com/2019/07/12/Java反射/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJava%E5%8F%8D%E5%B0%84%5C%E5%8F%8D%E5%B0%84%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95.png" alt="反射的三种方法"></p>
 <h2 id="Class对象的功能"><a href="#Class对象的功能" class="headerlink" title="Class对象的功能"></a>Class对象的功能</h2><h4 id="1-获取成员变量们"><a href="#1-获取成员变量们" class="headerlink" title="1.获取成员变量们"></a>1.获取成员变量们</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Field[] getFields()</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Field <span class="title">getField</span><span class="params">(String name)</span></span></span><br></pre></td></tr></table></figure>
