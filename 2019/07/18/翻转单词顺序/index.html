@@ -109,7 +109,7 @@
 <meta property="og:site_name" content="Mikasa·AckermanBlog">
 <meta property="og:description" content="给定一个字符串，翻转该字符串，翻转时单词中的字符顺序不变。例如，如果字符串为”Hello World”，则翻转后为”World Hello”。单词间以一个或多个空格分隔。注意，字符串开头和结尾都可能有多个空格。 输入格式:输入可能包括多行。每行代表一个字符串，除了空格外，标点符号和普通字母一样处理。你可以认为一行的字符总数不会超过50000个，单词数不会超过600，每个单词的长度也不会超过30。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-18T05:11:41.092Z">
+<meta property="og:updated_time" content="2019-07-30T11:56:08.600Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="翻转单词顺序">
 <meta name="twitter:description" content="给定一个字符串，翻转该字符串，翻转时单词中的字符顺序不变。例如，如果字符串为”Hello World”，则翻转后为”World Hello”。单词间以一个或多个空格分隔。注意，字符串开头和结尾都可能有多个空格。 输入格式:输入可能包括多行。每行代表一个字符串，除了空格外，标点符号和普通字母一样处理。你可以认为一行的字符总数不会超过50000个，单词数不会超过600，每个单词的长度也不会超过30。">
@@ -226,6 +226,22 @@
     
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -381,13 +397,23 @@
                 
               
 
-              <time title="创建时间：2019-07-18 13:00:26 / 修改时间：13:11:41" itemprop="dateCreated datePublished" datetime="2019-07-18T13:00:26+08:00">2019-07-18</time>
+              <time title="创建时间：2019-07-18 13:00:26" itemprop="dateCreated datePublished" datetime="2019-07-18T13:00:26+08:00">2019-07-18</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-30 19:56:08" itemprop="dateModified" datetime="2019-07-30T19:56:08+08:00">2019-07-30</time>
+              </span>
             
           
 
@@ -447,7 +473,7 @@
 
 <h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I am a student.</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">char</span> *s, <span class="keyword">int</span> begin, <span class="keyword">int</span> end)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">char</span> temp;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">while</span> (end &gt; begin) &#123;</span><br><span class="line"></span><br><span class="line">​        temp = s[begin];</span><br><span class="line"></span><br><span class="line">​        s[begin] = s[end];</span><br><span class="line"></span><br><span class="line">​        s[end] = temp;</span><br><span class="line"></span><br><span class="line">​        begin++;</span><br><span class="line"></span><br><span class="line">​        end--;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">int</span> i, j, n, m;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">char</span> s[<span class="number">50000</span>] = &#123;<span class="string">'\0'</span>&#125;, temp;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">while</span> (gets(s) != <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">​        swap(s, <span class="number">0</span>, <span class="built_in">strlen</span>(s) - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">​        <span class="keyword">for</span> (i = <span class="number">0</span>; s[i] != <span class="string">'\0'</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">​            <span class="keyword">while</span> (s[i] == <span class="string">' '</span>&amp;&amp; s[i] != <span class="string">'\0'</span>) &#123;</span><br><span class="line"></span><br><span class="line">​                i++;</span><br><span class="line"></span><br><span class="line">​            &#125;</span><br><span class="line"></span><br><span class="line">​            n = i;</span><br><span class="line"></span><br><span class="line">​            <span class="keyword">while</span> (s[i] != <span class="string">' '</span>&amp;&amp;s[i] != <span class="string">'\0'</span>) &#123;</span><br><span class="line"></span><br><span class="line">​                i++;</span><br><span class="line"></span><br><span class="line">​            &#125;</span><br><span class="line"></span><br><span class="line">​            m = i - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​            swap(&amp;s, n, m);</span><br><span class="line"></span><br><span class="line">​        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​        <span class="built_in">puts</span>(s);</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*先将整个字符串反转，在挨个反转单词，跳过空格*/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">char</span> *s, <span class="keyword">int</span> begin, <span class="keyword">int</span> end)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">char</span> temp;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">while</span> (end &gt; begin) &#123;</span><br><span class="line"></span><br><span class="line">​        temp = s[begin];</span><br><span class="line"></span><br><span class="line">​        s[begin] = s[end];</span><br><span class="line"></span><br><span class="line">​        s[end] = temp;</span><br><span class="line"></span><br><span class="line">​        begin++;</span><br><span class="line"></span><br><span class="line">​        end--;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">int</span> i, j, n, m;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">char</span> s[<span class="number">50000</span>] = &#123;<span class="string">'\0'</span>&#125;, temp;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">while</span> (gets(s) != <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">​        swap(s, <span class="number">0</span>, <span class="built_in">strlen</span>(s) - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">​        <span class="keyword">for</span> (i = <span class="number">0</span>; s[i] != <span class="string">'\0'</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">​            <span class="keyword">while</span> (s[i] == <span class="string">' '</span>&amp;&amp; s[i] != <span class="string">'\0'</span>) &#123;</span><br><span class="line"></span><br><span class="line">​                i++;                           </span><br><span class="line"></span><br><span class="line">​            &#125;</span><br><span class="line"></span><br><span class="line">​            n = i;</span><br><span class="line"></span><br><span class="line">​            <span class="keyword">while</span> (s[i] != <span class="string">' '</span>&amp;&amp;s[i] != <span class="string">'\0'</span>) &#123;</span><br><span class="line"></span><br><span class="line">​                i++;</span><br><span class="line"></span><br><span class="line">​            &#125;</span><br><span class="line"></span><br><span class="line">​            m = i - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​            swap(&amp;s, n, m);</span><br><span class="line"></span><br><span class="line">​        &#125;</span><br><span class="line"></span><br><span class="line">​        <span class="built_in">puts</span>(s);</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -581,7 +607,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -614,14 +640,22 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                      <a href="/tags/">
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">标签</span>
                   
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
                 </div>
               
             </nav>
