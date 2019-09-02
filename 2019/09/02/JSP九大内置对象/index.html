@@ -101,18 +101,21 @@
 
 
 
-  <meta name="description" content="一群人坐在一起，每人猜一个 100 以内的数，谁的数字最接近大家平均数的一半就赢。本题就要求你找出其中的赢家。 输入格式：输入在第一行给出一个正整数N（≤104）。随后 N 行，每行给出一个玩家的名字（由不超过8个英文字母组成的字符串）和其猜的正整数（≤ 100）。 输出格式：在一行中顺序输出：大家平均数的一半（只输出整数部分）、赢家的名字，其间以空格分隔。题目保证赢家是唯一的。 输入样例：123">
-<meta name="keywords" content="PTA">
+  <meta name="description" content="1.out：输出对象，向客服端输出内容。 2.pageContext： 3.request：请求对象，存储“客户端向服务端发送信息”     ​        3.1.request对象的常见方法： ​               String getParameter(String name);  ：根据请求 的字段名key，返回字段值value； ​              String[]">
+<meta name="keywords" content="JavaWeb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="猜数字">
-<meta property="og:url" content="http://yoursite.com/2019/07/18/猜数字/index.html">
+<meta property="og:title" content="JSP九大内置对象">
+<meta property="og:url" content="http://yoursite.com/2019/09/02/JSP九大内置对象/index.html">
 <meta property="og:site_name" content="Mikasa·AckermanBlog">
-<meta property="og:description" content="一群人坐在一起，每人猜一个 100 以内的数，谁的数字最接近大家平均数的一半就赢。本题就要求你找出其中的赢家。 输入格式：输入在第一行给出一个正整数N（≤104）。随后 N 行，每行给出一个玩家的名字（由不超过8个英文字母组成的字符串）和其猜的正整数（≤ 100）。 输出格式：在一行中顺序输出：大家平均数的一半（只输出整数部分）、赢家的名字，其间以空格分隔。题目保证赢家是唯一的。 输入样例：123">
+<meta property="og:description" content="1.out：输出对象，向客服端输出内容。 2.pageContext： 3.request：请求对象，存储“客户端向服务端发送信息”     ​        3.1.request对象的常见方法： ​               String getParameter(String name);  ：根据请求 的字段名key，返回字段值value； ​              String[]">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-18T05:04:17.471Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/JSP九大内置对象/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJSP%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%5C%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%E9%97%AE%E9%A2%98.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/02/JSP九大内置对象/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJSP%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%5C%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91.png">
+<meta property="og:updated_time" content="2019-09-02T14:32:23.030Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="猜数字">
-<meta name="twitter:description" content="一群人坐在一起，每人猜一个 100 以内的数，谁的数字最接近大家平均数的一半就赢。本题就要求你找出其中的赢家。 输入格式：输入在第一行给出一个正整数N（≤104）。随后 N 行，每行给出一个玩家的名字（由不超过8个英文字母组成的字符串）和其猜的正整数（≤ 100）。 输出格式：在一行中顺序输出：大家平均数的一半（只输出整数部分）、赢家的名字，其间以空格分隔。题目保证赢家是唯一的。 输入样例：123">
+<meta name="twitter:title" content="JSP九大内置对象">
+<meta name="twitter:description" content="1.out：输出对象，向客服端输出内容。 2.pageContext： 3.request：请求对象，存储“客户端向服务端发送信息”     ​        3.1.request对象的常见方法： ​               String getParameter(String name);  ：根据请求 的字段名key，返回字段值value； ​              String[]">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/02/JSP九大内置对象/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJSP%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%5C%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%E9%97%AE%E9%A2%98.png">
 
 
 
@@ -120,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/18/猜数字/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/02/JSP九大内置对象/">
 
 
 
@@ -130,7 +133,7 @@
   };
 </script>
 
-  <title>猜数字 | Mikasa·AckermanBlog</title>
+  <title>JSP九大内置对象 | Mikasa·AckermanBlog</title>
   
 
 
@@ -354,7 +357,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/18/猜数字/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/02/JSP九大内置对象/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mikasa·Ackerman">
@@ -371,7 +374,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">猜数字
+          <h1 class="post-title" itemprop="name headline">JSP九大内置对象
 
               
             
@@ -397,7 +400,7 @@
                 
               
 
-              <time title="创建时间：2019-07-18 13:00:15 / 修改时间：13:04:17" itemprop="dateCreated datePublished" datetime="2019-07-18T13:00:15+08:00">2019-07-18</time>
+              <time title="创建时间：2019-09-02 20:28:31 / 修改时间：22:32:23" itemprop="dateCreated datePublished" datetime="2019-09-02T20:28:31+08:00">2019-09-02</time>
             </span>
           
 
@@ -416,7 +419,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构与算法/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
 
                 
                 
@@ -456,15 +459,69 @@
       
 
       
-        <p>一群人坐在一起，每人猜一个 100 以内的数，谁的数字最接近大家平均数的一半就赢。本题就要求你找出其中的赢家。</p>
-<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>输入在第一行给出一个正整数N（≤104）。随后 N 行，每行给出一个玩家的名字（由不超过8个英文字母组成的字符串）和其猜的正整数（≤ 100）。</p>
-<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>在一行中顺序输出：大家平均数的一半（只输出整数部分）、赢家的名字，其间以空格分隔。题目保证赢家是唯一的。</p>
-<h3 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">7</span><br><span class="line">Bob 35</span><br><span class="line">Amy 28</span><br><span class="line">James 98</span><br><span class="line">Alice 11</span><br><span class="line">Jack 45</span><br><span class="line">Smith 33</span><br><span class="line">Chris 62</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">22 Amy</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"math.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">​    </span><br><span class="line"></span><br><span class="line">​    <span class="keyword">int</span> i,n,s=<span class="number">0</span>,min=<span class="number">32767</span>,index=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">char</span> str[n][<span class="number">10</span>];</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">int</span> a[n][<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line"></span><br><span class="line">​      <span class="built_in">scanf</span>(<span class="string">"%s %d"</span>,str[i],&amp;a[i][<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line">​      s+=a[i][<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    s=(s/n)/<span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line"></span><br><span class="line">​        <span class="keyword">if</span>(<span class="built_in">abs</span>(s-a[i][<span class="number">0</span>])&lt;min)&#123;</span><br><span class="line"></span><br><span class="line">​          index=i;</span><br><span class="line"></span><br><span class="line">​          min = <span class="built_in">abs</span>(s-a[i][<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line">​        &#125;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​    <span class="built_in">printf</span>(<span class="string">"%d %s"</span>,s,str[index]);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <p>1.<strong>out</strong>：输出对象，向客服端输出内容。</p>
+<p>2.<strong>pageContext</strong>：</p>
+<p>3.<strong>request</strong>：请求对象，存储“客户端向服务端发送信息”    </p>
+<p>​        3.1.<strong>request对象的常见方法</strong>：</p>
+<p>​               <code>String getParameter(String name);</code>  ：根据请求 的字段名key，返回字段值value；</p>
+<p>​              <code>String[] getParameterValues(String name);</code>  ：根据请求字段名key，返回多个字段值value  （例如：checkbox）；</p>
+<p>​              <code>void setCharacterEncoding(&quot;编码格式utf-8&quot;);</code> ：设置请求编码（tomcat7以前默认ISO-8859-1，tomcat8以后默认为utf-8）；                               </p>
+<p>​            <code>getRequestDispatcher(&quot;b.jsp&quot;).forward(request,response);</code>  ：请求转发的方式跳转页面 A-&gt;B。</p>
+<p>​           <code>SerletContext getServerContext();</code>   ：获取项目的ServletContext对象。</p>
+<p>4.<strong>response</strong>：响应对象</p>
+<p>​       4.1.<strong>response对象提供的方法</strong>：</p>
+<p>​               <code>void addCookie(Cookie cookie);</code>服务端向客户端增加cookie对象</p>
+<p>​               <code>void sendRedirect(String location) throws IOException;</code>  ：页面跳转的一种方式（重定向）</p>
+<p>​               <code>void setContextType(String type);</code>  ：设置服务端响应的编码（设置服务端的contextType类型）</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">请求转发</th>
+<th align="center">重定向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">地址栏是否保留</td>
+<td align="center">不变</td>
+<td align="center">改变</td>
+</tr>
+<tr>
+<td align="center">是否保留第一次请求时的数据</td>
+<td align="center">保留</td>
+<td align="center">不保留</td>
+</tr>
+<tr>
+<td align="center">请求的次数</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">跳转发生的位置</td>
+<td align="center">服务端</td>
+<td align="center">客户端发出的第二次跳转</td>
+</tr>
+</tbody></table>
+<p><img src="//yoursite.com/2019/09/02/JSP九大内置对象/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJSP%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%5C%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%E9%97%AE%E9%A2%98.png" alt="请求次数问题"></p>
+<p><img src="//yoursite.com/2019/09/02/JSP九大内置对象/F:%5CWorkSpaces%5Chexo%5Csource_posts%5CJSP%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%5C%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91.png" alt="请求转发与重定向"></p>
+<p>5.<strong>session</strong>（服务端）：</p>
+<p>​        5.1.Cookie（客户端，不是内置对象）：Cookie时由服务端生成的，再发送给客户端保存。相当于本地缓存的作用，提高访问服务端的效率，但是安全性较差。</p>
+<p>​        5.2.Cookie：<code>name=value</code></p>
+<p>​               <code>javax.servlet.http.Cookie</code></p>
+<p>​               <code>public Cookie(String name,String value)</code></p>
+<p>​               <code>String getName()</code>：获取nam</p>
+<p>​               <code>String getValue()</code>：获取value</p>
+<p>​               <code>void setMaxAge(int expiry)</code>：最大有效期（秒）</p>
+<p>​               服务端准备Cookie：<code>response.addCookie(Cookie cookie)</code></p>
+<p>​               客户端获取cookie：<code>request.getCookies();</code></p>
+<p>​               a.服务端增加cookie:response对象；客户端获取对象：request对象</p>
+<p>​               b.不能直接获取某一个单独对象，只能一次性将全部的cookie拿到</p>
+<p>​              通过F12可以发现  除了自己设置的Cookie对象外，还有一个name为 JSESSIONID的cookie</p>
+<p>建议 cookie只保存  英文数字，否则需要进行编码、解码</p>
+<p>6.<strong>application</strong>：</p>
+<p>7.<strong>config</strong>：</p>
+<p>8.<strong>page</strong>：</p>
+<p>9.<strong>exception</strong>：</p>
 
       
     </div>
@@ -501,7 +558,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/PTA/" rel="tag"># PTA</a>
+            <a href="/tags/JavaWeb/" rel="tag"># JavaWeb</a>
           
         </div>
       
@@ -514,8 +571,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/18/古风排版/" rel="next" title="古风排版">
-                <i class="fa fa-chevron-left"></i> 古风排版
+              <a href="/2019/08/28/数独/" rel="next" title="数独">
+                <i class="fa fa-chevron-left"></i> 数独
               </a>
             
           </div>
@@ -523,10 +580,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/18/翻转单词顺序/" rel="prev" title="翻转单词顺序">
-                翻转单词顺序 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -570,17 +623,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -676,23 +720,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式："><span class="nav-number">1.</span> <span class="nav-text">输入格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式："><span class="nav-number">2.</span> <span class="nav-text">输出格式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例："><span class="nav-number">3.</span> <span class="nav-text">输入样例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例："><span class="nav-number">4.</span> <span class="nav-text">输出样例：</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
