@@ -101,18 +101,18 @@
 
 
 
-  <meta name="description" content="已知函数e*x可以展开为幂级数1+*x+x2/2!+x3/3!+⋯+x**k/k!+⋯。现给定一个实数x，要求利用此幂级数部分和求e*x*的近似值，求和一直继续到最后一项的绝对值小于0.00001。 输入格式:输入在一行中给出一个实数x∈[0,5]。 输出格式:在一行中输出满足条件的幂级数部分和，保留小数点后四位。 输入样例:11.2  输出样例:13.3201  1234567891011121">
-<meta name="keywords" content="PTA">
+  <meta name="description" content="题目描述Michael喜欢滑雪。这并不奇怪，因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的每个数字代表点的高度。下面是一个例子： 123451   2   3   4   516  17  18  19   615  24  25  20   714">
+<meta name="keywords" content="深度优先搜索,洛谷">
 <meta property="og:type" content="article">
-<meta property="og:title" content="求幂级数展开的部分和">
-<meta property="og:url" content="http://yoursite.com/2019/07/19/求幂级数展开的部分和/index.html">
+<meta property="og:title" content="P1434 [SHOI2002]滑雪">
+<meta property="og:url" content="http://yoursite.com/2019/10/05/P1434-SHOI2002-滑雪/index.html">
 <meta property="og:site_name" content="Mikasa·AckermanBlog">
-<meta property="og:description" content="已知函数e*x可以展开为幂级数1+*x+x2/2!+x3/3!+⋯+x**k/k!+⋯。现给定一个实数x，要求利用此幂级数部分和求e*x*的近似值，求和一直继续到最后一项的绝对值小于0.00001。 输入格式:输入在一行中给出一个实数x∈[0,5]。 输出格式:在一行中输出满足条件的幂级数部分和，保留小数点后四位。 输入样例:11.2  输出样例:13.3201  1234567891011121">
+<meta property="og:description" content="题目描述Michael喜欢滑雪。这并不奇怪，因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的每个数字代表点的高度。下面是一个例子： 123451   2   3   4   516  17  18  19   615  24  25  20   714">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-19T04:55:29.605Z">
+<meta property="og:updated_time" content="2019-10-05T08:43:26.869Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="求幂级数展开的部分和">
-<meta name="twitter:description" content="已知函数e*x可以展开为幂级数1+*x+x2/2!+x3/3!+⋯+x**k/k!+⋯。现给定一个实数x，要求利用此幂级数部分和求e*x*的近似值，求和一直继续到最后一项的绝对值小于0.00001。 输入格式:输入在一行中给出一个实数x∈[0,5]。 输出格式:在一行中输出满足条件的幂级数部分和，保留小数点后四位。 输入样例:11.2  输出样例:13.3201  1234567891011121">
+<meta name="twitter:title" content="P1434 [SHOI2002]滑雪">
+<meta name="twitter:description" content="题目描述Michael喜欢滑雪。这并不奇怪，因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的每个数字代表点的高度。下面是一个例子： 123451   2   3   4   516  17  18  19   615  24  25  20   714">
 
 
 
@@ -120,7 +120,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/19/求幂级数展开的部分和/">
+  <link rel="canonical" href="http://yoursite.com/2019/10/05/P1434-SHOI2002-滑雪/">
 
 
 
@@ -130,7 +130,7 @@
   };
 </script>
 
-  <title>求幂级数展开的部分和 | Mikasa·AckermanBlog</title>
+  <title>P1434 [SHOI2002]滑雪 | Mikasa·AckermanBlog</title>
   
 
 
@@ -354,7 +354,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/19/求幂级数展开的部分和/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/05/P1434-SHOI2002-滑雪/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mikasa·Ackerman">
@@ -371,7 +371,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">求幂级数展开的部分和
+          <h1 class="post-title" itemprop="name headline">P1434 [SHOI2002]滑雪
 
               
             
@@ -397,7 +397,7 @@
                 
               
 
-              <time title="创建时间：2019-07-19 12:48:02 / 修改时间：12:55:29" itemprop="dateCreated datePublished" datetime="2019-07-19T12:48:02+08:00">2019-07-19</time>
+              <time title="创建时间：2019-10-05 16:34:48 / 修改时间：16:43:26" itemprop="dateCreated datePublished" datetime="2019-10-05T16:34:48+08:00">2019-10-05</time>
             </span>
           
 
@@ -456,14 +456,19 @@
       
 
       
-        <p>已知函数<em>e*<em>x</em>可以展开为幂级数1+*x</em>+<em>x</em>2/2!+<em>x</em>3/3!+⋯+<em>x**k</em>/<em>k</em>!+⋯。现给定一个实数<em>x</em>，要求利用此幂级数部分和求<em>e*</em>x*的近似值，求和一直继续到最后一项的绝对值小于0.00001。</p>
-<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出一个实数<em>x</em>∈[0,5]。</p>
-<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中输出满足条件的幂级数部分和，保留小数点后四位。</p>
-<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.2</span><br></pre></td></tr></table></figure>
+        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Michael喜欢滑雪。这并不奇怪，因为滑雪的确很刺激。可是为了获得速度，滑的区域必须向下倾斜，而且当你滑到坡底，你不得不再次走上坡或者等待升降机来载你。Michael想知道在一个区域中最长的滑坡。区域由一个二维数组给出。数组的每个数字代表点的高度。下面是一个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1   2   3   4   5</span><br><span class="line">16  17  18  19   6</span><br><span class="line">15  24  25  20   7</span><br><span class="line">14  23  22  21   8</span><br><span class="line">13  12  11  10   9</span><br></pre></td></tr></table></figure>
 
-<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3.3201</span><br></pre></td></tr></table></figure>
+<p>一个人可以从某个点滑向上下左右相邻四个点之一，当且仅当高度减小。在上面的例子中，一条可行的滑坡为24－17－16－1（从24开始，在1结束）。当然25－24－23－…－3－2－1更长。事实上，这是最长的一条。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入的第一行为表示区域的二维数组的行数R和列数C（1≤R，C≤100）。下面是R行，每行有C个数，代表高度(两个数字之间用1个空格间隔)。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出区域中最长滑坡的长度。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p><strong>输入 #1</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">5 5</span><br><span class="line">1 2 3 4 5</span><br><span class="line">16 17 18 19 6</span><br><span class="line">15 24 25 20 7</span><br><span class="line">14 23 22 21 8</span><br><span class="line">13 12 11 10 9</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"math.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">​    </span><br><span class="line"></span><br><span class="line">​    <span class="keyword">double</span> x,sum=<span class="number">1.0</span>,i=<span class="number">1</span>,s=<span class="number">0</span>,A=<span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line">​    <span class="built_in">scanf</span>(<span class="string">"%lf"</span>,&amp;x);</span><br><span class="line"></span><br><span class="line">​     <span class="keyword">if</span>(x==<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">​      &#123;</span><br><span class="line"></span><br><span class="line">​          sum=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">​          &#125;<span class="keyword">else</span> <span class="keyword">if</span>(x&gt;<span class="number">0</span>&amp;&amp;x&lt;=<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">​          &#123;</span><br><span class="line"></span><br><span class="line">​             </span><br><span class="line"></span><br><span class="line">​             <span class="keyword">for</span>(i=<span class="number">1.0</span>;;i++)</span><br><span class="line"></span><br><span class="line">​              &#123;</span><br><span class="line"></span><br><span class="line">​                  A=A*i;</span><br><span class="line"></span><br><span class="line">​                  s=<span class="built_in">pow</span>(x,i)/A;</span><br><span class="line"></span><br><span class="line">​                  sum=sum+s;</span><br><span class="line"></span><br><span class="line">​                  <span class="keyword">if</span>(s&lt;<span class="number">0.00001</span>)</span><br><span class="line"></span><br><span class="line">​                  &#123;</span><br><span class="line"></span><br><span class="line">​                      <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">​                      &#125;</span><br><span class="line"></span><br><span class="line">​                  &#125;</span><br><span class="line"></span><br><span class="line">​              &#125;<span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">​                  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">​                  &#125;</span><br><span class="line"></span><br><span class="line">​      <span class="built_in">printf</span>(<span class="string">"%.4lf"</span>,sum);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​        <span class="keyword">return</span> <span class="number">0</span>;   </span><br><span class="line"></span><br><span class="line">​    &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出 #1</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">25</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,ans=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> arr[<span class="number">101</span>][<span class="number">101</span>],f[<span class="number">101</span>][<span class="number">101</span>];  <span class="comment">//f[][]用于记录每条路线走过的值，方便之后直接调用 </span></span><br><span class="line"><span class="keyword">int</span> dx[<span class="number">4</span>]=&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">-1</span>,<span class="number">1</span>&#125;,dy[<span class="number">4</span>] = &#123;<span class="number">-1</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(f[x][y]!=<span class="number">1</span>) <span class="keyword">return</span> f[x][y];   <span class="comment">//若f[x][y]！=1 则表明该点遍历过，直接返回遍历过的值 </span></span><br><span class="line">	<span class="keyword">int</span> b = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;<span class="number">4</span>;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(x&gt;=<span class="number">1</span>&amp;&amp;x&lt;=m&amp;&amp;y&gt;=<span class="number">1</span>&amp;&amp;y&lt;=n&amp;&amp;arr[x][y]&gt;arr[x+dx[i]][y+dy[i]])&#123;</span><br><span class="line">			b=max(b,dfs(x+dx[i],y+dy[i])+<span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	f[x][y]=max(b,f[x][y]);   <span class="comment">//比较原先的f[x][y]的值，将最大的值赋给f[x][y] </span></span><br><span class="line">	<span class="keyword">return</span> f[x][y];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;m&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">			<span class="built_in">cin</span>&gt;&gt;arr[i][j];</span><br><span class="line">			f[i][j]=<span class="number">1</span>;      <span class="comment">//赋初值为1，因为一开始的点满足题目的条件 </span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;j&lt;=n;j++)&#123;</span><br><span class="line">			ans = max(ans,dfs(i,j));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -501,7 +506,9 @@
         
         <div class="post-tags">
           
-            <a href="/tags/PTA/" rel="tag"># PTA</a>
+            <a href="/tags/深度优先搜索/" rel="tag"># 深度优先搜索</a>
+          
+            <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
           
         </div>
       
@@ -514,8 +521,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/19/换硬币/" rel="next" title="换硬币">
-                <i class="fa fa-chevron-left"></i> 换硬币
+              <a href="/2019/10/02/寻找两个有序数组的中位数/" rel="next" title="寻找两个有序数组的中位数">
+                <i class="fa fa-chevron-left"></i> 寻找两个有序数组的中位数
               </a>
             
           </div>
@@ -523,10 +530,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/19/找完数/" rel="prev" title="找完数">
-                找完数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -691,7 +694,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式"><span class="nav-number">1.</span> <span class="nav-text">输入格式:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式"><span class="nav-number">2.</span> <span class="nav-text">输出格式:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入样例"><span class="nav-number">3.</span> <span class="nav-text">输入样例:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出样例"><span class="nav-number">4.</span> <span class="nav-text">输出样例:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入格式"><span class="nav-number">2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出格式"><span class="nav-number">3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入输出样例"><span class="nav-number">4.</span> <span class="nav-text">输入输出样例</span></a></li></ol></div>
             
 
           </div>
